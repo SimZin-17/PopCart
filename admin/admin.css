@@ -1,0 +1,396 @@
+ /* The Admin login page*/
+ 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#adminloginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#adminLoginBox {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+#adminLoginBox h2 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+#adminLoginBox p {
+  color: #aaaaaa;
+  margin-bottom: 25px;
+}
+
+.adminLoginInput {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.adminLoginInput label {
+  font-weight: 600;
+  color: #aaaaaa;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.adminLoginInput input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.adminLoginInput input:focus {
+  border-color: #ffffff;
+}
+
+.adminLoginInput button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.adminLoginInput button:hover {
+  background-color: #cccccc;
+}
+
+
+/* The Dashboard Page*/
+
+#adminWrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+#sidebar {
+  width: 250px;
+  background-color: #1e1e1e;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#adminLogo {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+
+#adminLogo span {
+  color: #aaaaaa;
+}
+
+#sideMenu {
+  list-style: none;
+}
+
+#sideMenu li {
+  margin-bottom: 10px;
+}
+
+#sideMenu li a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: block;
+}
+
+#sideMenu li a:hover {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+#mainContent {
+  flex: 1;
+  padding: 40px;
+  background-color: #121212;
+}
+
+#mainContent h2 {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+#mainContent p {
+  color: #aaaaaa;
+  margin-bottom: 30px;
+}
+
+#statCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.statCard {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.statCard i {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.statCard h3 {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.statCard p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* The Users  Page and Products page same css*/
+
+#umWrapper {
+  padding: 20px;
+}
+
+#umWrapper h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#addBtn {
+  margin-bottom: 20px;
+}
+
+#addBtn button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#usersTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#usersTable th {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+#usersTable td {
+  padding: 12px 15px;
+  color: #ffffff;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+#usersTable tr:hover {
+  background-color: #1e1e1e;
+}
+
+#usersTable .editBtn {
+  padding: 6px 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#usersTable .deleteBtn {
+  padding: 6px 14px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#usersTable th {
+  background-color: #2a2a2a;
+}
+
+/*Forgot password*/
+
+.errorMsg {
+  color: #ef4444;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.successMsg {
+  color: #22c55e;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.resetLink {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  word-break: break-all;
+  border: 1px solid #333333;
+}
+
+.resetLink p {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.resetLink a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.resetLink a:hover {
+  text-decoration: underline;
+}
+
+.backLink {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.backLink:hover {
+  color: #ffffff;
+}
+
+
+
+/* =========================================
+   DELIVERABLE 2: ADMIN RESPONSIVE OVERRIDE
+   (Paste at the VERY BOTTOM of admin.css)
+   ========================================= */
+
+/* 1. GLOBAL RESET */
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+html, body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important; 
+  margin: 0 !important;
+}
+
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important; 
+}
+
+/* =========================================
+   2. TABLET OVERRIDE (1024px and below)
+   ========================================= */
+@media (max-width: 1024px) {
+  
+  #adminWrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  #sidebar {
+    width: 100% !important;
+    height: auto !important;
+    padding: 15px !important;
+    align-items: center !important;
+  }
+  
+  #sideMenu {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 0 !important;
+  }
+  
+  #sideMenu li {
+    margin: 0 !important;
+  }
+  
+  #mainContent {
+    width: 100% !important;
+    padding: 15px !important;
+    overflow-x: hidden !important; 
+  }
+  
+  #statCards {
+    grid-template-columns: repeat(2, 1fr) !important; 
+  }
+}
+
+/* =========================================
+   3. SMALL MOBILE OVERRIDE (768px and below)
+   ========================================= */
+@media (max-width: 768px) {
+  
+  #statCards {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* VISUAL CUE: Injects swipe text above the table on phones */
+  #umWrapper::before {
+  
+    display: block !important;
+    text-align: center !important;
+    font-size: 13px !important;
+    color: #aaaaaa !important;
+    padding-bottom: 15px !important;
+    font-style: italic !important;
+  }
+
+  /* STRICTLY FOR PHONES: Force tables to scroll without breaking tablet view */
+  #usersTable, #productsTable, table {
+    display: block !important; 
+    overflow-x: auto !important; 
+    white-space: nowrap !important; 
+    width: 100% !important; 
+    -webkit-overflow-scrolling: touch !important; 
+  }
+}
