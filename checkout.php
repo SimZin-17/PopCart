@@ -65,9 +65,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $payfast_url = 'https://sandbox.payfast.co.za/eng/process'; // Change to www.payfast.co.za for Live
   $merchant_id = '10050399'; // Replace with your Merchant ID
   $merchant_key = '01alm6ktrkvmj'; // Replace with your Merchant Key
-  $return_url = 'http://localhost/popcart/checkout.php?payment=success';
-  $cancel_url = 'http://localhost/popcart/checkout.php?payment=cancelled';
-  $notify_url = 'https://<your-ngrok-url>.ngrok-free.app/popcart/payfast_itn.php';
+  $return_url = 'http://popcart.rf.gd/checkout.php?payment=success';
+  $cancel_url = 'http://popcart.rf.gd/checkout.php?payment=cancelled';
+  $notify_url = 'http://popcart.rf.gd/payfast_itn.php';
 
   // Construct the PayFast HTML Form
   $htmlForm = '<form action="' . $payfast_url . '" method="post" id="payfast-form">';

@@ -57,7 +57,7 @@ $users = $stmt->fetchAll();
     <ul id="sideMenu">
       <li><a href="dashboard.php"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
       <li><a href="users.php"><i class="fa-solid fa-users"></i> Users</a></li>
-      <li><a href="products.php"><i class="fa-solid fa-box"></i> Products</a></li>
+      <li><a href="products.php" style="font-weight: bold; color: #3b82f6;"><i class="fa-solid fa-shield-halved"></i> Moderation</a></li>
       <li><a href="../index.php"><i class="fa-solid fa-house"></i> Main Site</a></li>
       <li><a href="login.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
     </ul>
